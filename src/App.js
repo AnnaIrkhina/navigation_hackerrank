@@ -11,21 +11,15 @@ const locations = [
     'Alcatraz Island, San Francisco, CA, USA'
 ];
 
-class App extends Component {
+const App = () => {
 
-    constructor() {
-        super();
-        this.locations = [...locations];
-    }
-
-    render() {
         return (
             <div className="App">
                 <h8k-navbar header={title}></h8k-navbar>
-                <Navigation locations={this.locations}/>
+                <Navigation locations={locations}/>
             </div>
         );
-    }
+    
 }
 
 export default App;
